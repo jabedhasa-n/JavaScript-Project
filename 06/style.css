@@ -1,0 +1,36 @@
+.form-style{
+    border: 10px solid black !important;
+    border-radius: none;
+    width: 350px;
+    background-color: rgb(44, 39, 39) !important;
+    opacity: .8;
+}
+.cross{
+    position: absolute;
+    top: 10px;
+    left: 380px;
+    font-size: 20px;
+}
+.popup{
+    position: relative;
+    top: 100px;
+    left: 200px;
+}
+
+/* animation-part */
+.popup{
+    top: -400px;
+    animation: drop .5s ease forwards;
+}
+@keyframes drop{
+    0%{
+        opacity: 0;
+    }
+    70%{
+        transform: translateY(700px);
+    }
+    100%{
+        transform: translateY(650px);
+        opacity: 1;
+    }
+}
