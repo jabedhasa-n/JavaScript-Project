@@ -1,0 +1,46 @@
+body{
+    background-color: antiquewhite;
+}
+.container h2 {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    border-radius: 10px;
+}
+button#btn {
+    display: block;
+    margin: auto;
+    padding: 8px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.nav-center {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 0px 5px 0px #ffff;
+    background: #fff;
+    padding: 4px 10px;
+}
+ul.nav-links {
+    padding: 0px;
+    list-style: none;
+}
+ul.nav-links li {
+    display: inline-block;
+}
+ul.nav-links li a {
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 900;
+}
+.nav-center h4 {
+    text-transform: capitalize;
+    color: green;
+}
+main {
+    margin-top: 300px;
+}
