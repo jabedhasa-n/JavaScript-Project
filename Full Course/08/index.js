@@ -32,4 +32,10 @@ var country="Bangladesh ";
 var text="is my country";
 var stringAdd=(country.concat(text));
 document.write(stringAdd);
+document.write("<br>");
+
+//slice
+var country="Australia";
+var cutCar=country.slice(0,3);
+document.write(cutCar);
 
