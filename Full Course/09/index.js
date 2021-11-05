@@ -1,0 +1,13 @@
+var firstName="Jabed";
+var lastName=" Hasan";
+document.write(firstName);
+document.write("<br>");
+document.write(lastName);
+document.write("<br>");
+document.write( firstName + lastName);
+document.write("<br>");
+document.write("my name is " + firstName );
+document.write("<br>");
+var num1=50;
+var num2=50;
+document.write("first num : "+ num1 + " second num2 : "+ num2);
