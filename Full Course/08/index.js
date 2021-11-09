@@ -9,7 +9,7 @@ document.write("<br>");
 
 //excet character 
 document.write(country.charAt(3));
-document.write("<br>");
+document.write("<br>"); 
  
 //uppercase 
 document.write(country.toUpperCase());
@@ -38,4 +38,6 @@ document.write("<br>");
 var country="Australia";
 var cutCar=country.slice(0,3);
 document.write(cutCar);
+
+console.log('jabed');
 
