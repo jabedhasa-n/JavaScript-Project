@@ -8,10 +8,11 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 950px;
   height: 100vh;
+  margin: auto;
 }
 
 /*Styles for product card*/
@@ -20,7 +21,7 @@
   z-index: 1;
   background: rgb(189, 75, 75);
   position: relative;
-  width: 400px;
+  width: 300px;
   height: auto;
   padding-bottom: 30px;
 }
@@ -28,7 +29,7 @@
 .product .product-card .product-img{
  text-align: center;
  margin: auto;
- width: 400px;
+ width: 300px;
 }
 
 .product .product-card .name{
