@@ -1,25 +1,25 @@
+let age=10;
 
-let boyAge =prompt("Please type boy's age");
-let girlAge =prompt("Please type girl's age");
+//ternery operator 
 
-if (boyAge>=21 && girlAge>=18){
-    console.log("Boys age is " + boyAge);
-    console.log("girl age is " + girlAge);
+let hello=(age>=18)? "right": "wrong";
 
-   console.log("So , They are capable to marry");
+console.log(hello)
+
+
+// nallesh collasing operator
+
+let ope=null;
+
+console.log(ope ?? 'ok')
+
+let name = "Jabed";
+
+let right=(name=="Jabed") ? 'he is a right' : 'he is not right'
+
+console.log(right)
+
+
+for(let i=0; i<100;i++){
+    console.log(i);
 }
-else if(boyAge>=21 && girlAge<=18){
-    console.log("So , They are are not capable to marry");
-    console.log("please boy, you don't need to wait but you finance .....So find out another girl");
-    console.log("please girl, you have to wait " +(18-girlAge) + " years");
- }
-else if(boyAge<=21 && girlAge>=18){
-    console.log("So , They are are not capable to marry");
-    console.log("please boy, you have to wait " +(21-boyAge) + " years");
-    console.log("please girl, you don't need to wait but you finance ....So find out another boy");
- }
-else{
-    console.log("So , They are are not capable to marry");
-    console.log("please boy, you have to wait " +(21-boyAge) + " years");
-    console.log("please girl, you have to wait " +(18-girlAge) + " years");
- };
