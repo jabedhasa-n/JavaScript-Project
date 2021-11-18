@@ -1,6 +1,6 @@
 // GPA, CGPA, GRADE function for result publishing
 
-function resultCal(name,roll,gpa){
+resultCal = (name,roll,gpa) => {
 
         if(gpa>=33 && gpa<=39 && bangla >=33 && english>=33 && math>=33){
 
@@ -76,10 +76,10 @@ function resultCal(name,roll,gpa){
     }
 }
 let studentName = prompt("Please Type Your Name")
-let studentroll = prompt("Please Type Your roll")
-let bangla = parseInt(prompt("please Type Your Bangla mark"))
-let english = parseInt(prompt("please Type Your English mark"))
-let math = parseInt(prompt("please Type Your Math mark"))
+let studentroll = prompt("Please Type Your Roll")
+let bangla = parseInt(prompt("please Type Your Bangla Mark"))
+let english = parseInt(prompt("please Type Your English Mark"))
+let math = parseInt(prompt("please Type Your Math Mark"))
 
 let totalGpa= (bangla + english + math)/3;
 
