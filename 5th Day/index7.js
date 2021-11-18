@@ -1,13 +1,13 @@
 // GPA, CGPA, GRADE function for result publishing
  
-resultCal = (name,roll,gpa) => {
+let resultCal = (name,roll,gpa) => {
 
     if(gpa>=33 && gpa<=39 && bangla >=33 && english>=33 && math>=33){
 
     return `
     Student NAME : ${name}
     Your ROLL    : ${roll}
-    Your GPA     : ${gpa} 
+    Your GPA     : ${gpa.toFixed(2)}
     Your CGPA    : 2.5
     your GRADE   : D 
     `
@@ -17,7 +17,7 @@ else if(gpa>=40 && gpa<=49 && bangla >=33 && english>=33 && math>=33){
     return `
     Student NAME : ${name}
     Your ROLL    : ${roll}
-    Your GPA     : ${gpa} 
+    Your GPA     : ${gpa.toFixed(2)}
     Your CGPA    : 3.0
     your GRADE   : C 
     `
@@ -27,7 +27,7 @@ else if(gpa>=50 && gpa<=59 && bangla >=33 && english>=33 && math>=33){
     return `
     Student NAME : ${name}
     Your ROLL    : ${roll}
-    Your GPA     : ${gpa} 
+    Your GPA     : ${gpa.toFixed(2)}
     Your CGPA    : 3.5
     your GRADE   : B 
     `
@@ -37,7 +37,7 @@ else if(gpa>=60 && gpa<=69 && bangla >=33 && english>=33 && math>=33){
     return `
     Student NAME : ${name}
     Your ROLL    : ${roll}
-    Your GPA     : ${gpa} 
+    Your GPA     : ${gpa.toFixed(2)}
     Your CGPA    : 4.0
     your GRADE   : A- 
     `
@@ -47,7 +47,7 @@ else if(gpa>=70 && gpa<=79 && bangla >=33 && english>=33 && math>=33){
     return `
     Student NAME : ${name}
     Your ROLL    : ${roll}
-    Your GPA     : ${gpa} 
+    Your GPA     : ${gpa.toFixed(2)}
     Your CGPA    : 4.5
     your GRADE   : A 
     `
@@ -57,7 +57,7 @@ else if(gpa>=80 && gpa<=100 && bangla >=33 && english>=33 && math>=33){
     return `
     Student NAME : ${name}
     Your ROLL    : ${roll}
-    Your GPA     : ${gpa} 
+    Your GPA     : ${gpa.toFixed(2)}
     Your CGPA    : 5.0
     your GRADE   : A+ 
     `
@@ -67,11 +67,11 @@ else if (gpa>100){
 }
 else{
         return `
-        Student name : ${name}
+        Student NAME : ${name}
         Your ROLL    : ${roll}
-        Your Gpa     : ${gpa.toFixed(2)}
-        Your Gpa     : ${(gpa).toFixed(2)}
-        your grade   : F 
+        Your GPA     : ${gpa.toFixed(2)}
+        Your GPA     : ${(gpa).toFixed(2)}
+        your GRADE   : F 
  `
 }
 }
