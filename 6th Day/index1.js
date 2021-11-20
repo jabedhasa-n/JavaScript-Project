@@ -7,8 +7,14 @@ let english = parseInt(prompt("please Type Your English Mark"));
 let math = parseInt(prompt("please Type Your Math Mark"));
 
 
+// ----------------
 
 
+// -------- function call------------
+
+
+
+let lead_name= new MainFunction;
 
 console.log(
     `
@@ -16,11 +22,11 @@ console.log(
     stundet roll = ${studentroll}
      
     subject        marks             GPA                grade
-    bangla         ${bangla}         ${gpa(bangla)}     ${grade(bangla)}
-    English        ${english}        ${gpa(english)}    ${grade(english)}
-    Mathematics    ${math}           ${gpa(math)}       ${grade(math)}
+    bangla         ${bangla}         ${lead_name.gpa(bangla)}     ${lead_name.grade(bangla)}
+    English        ${english}        ${lead_name.gpa(english)}    ${lead_name.grade(english)}
+    Mathematics    ${math}           ${lead_name.gpa(math)}       ${lead_name.grade(math)}
 
     ------------------------------------------------------------------------------
-                                            cgpa= ${cgpa(gpa(bangla),gpa(english),gpa(math))} ;
+                                            cgpa= ${lead_name.cgpa(lead_name.gpa(bangla),lead_name.gpa(english),lead_name.gpa(math))} ;
     `
 )
