@@ -1,32 +1,30 @@
-// GPA, CGPA, GRADE function for result publishing
+//Create a function that will return children, teenagers, young people, old people from the age
 
-let studentName = prompt("Please Type Your Name");
-let studentroll = prompt("Please Type Your Roll");
-let bangla = parseInt(prompt("please Type Your Bangla Mark"));
-let english = parseInt(prompt("please Type Your English Mark"));
-let math = parseInt(prompt("please Type Your Math Mark"));
+yourName=prompt("please Type your Name");
+age=parseInt(prompt("please Type your Age"));
+
+let MainFunction = function (){
+
+    this.agecalculor =(age)=>{
+        if(age>=0 && age<=8){
+            return `your name is ${yourName} and you are children`;
+        }
+        else if(age>=9 && age<=19){
+            return `your name is ${yourName} and you are teenagers`;
+        }
+        else if(age>=20 && age<=35){
+            return `your name is ${yourName} and you are teenagers`;
+        }
+        else{
+            return `your name is ${yourName} and your are old`
+        }
+    }
+
+}
+
+let lead_function= new MainFunction();
+
+console.log(`${lead_function.agecalculor(age)}`);
 
 
-// ----------------
 
-
-// -------- function call------------
-
-
-
-let lead_name= new MainFunction;
-
-console.log(
-    `
-    stundet name = ${studentName}
-    stundet roll = ${studentroll}
-     
-    subject        marks             GPA                grade
-    bangla         ${bangla}         ${lead_name.gpa(bangla)}     ${lead_name.grade(bangla)}
-    English        ${english}        ${lead_name.gpa(english)}    ${lead_name.grade(english)}
-    Mathematics    ${math}           ${lead_name.gpa(math)}       ${lead_name.grade(math)}
-
-    ------------------------------------------------------------------------------
-                                            cgpa= ${lead_name.cgpa(lead_name.gpa(bangla),lead_name.gpa(english),lead_name.gpa(math))} ;
-    `
-)

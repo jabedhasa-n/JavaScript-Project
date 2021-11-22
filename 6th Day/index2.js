@@ -21,7 +21,7 @@ console.log(
     stundet name = ${studentName}
     stundet roll = ${studentroll}
      
-    subject        marks             GPA                grade
+    subject        marks             GPA                          grade
     bangla         ${bangla}         ${lead_name.gpa(bangla)}     ${lead_name.grade(bangla)}
     English        ${english}        ${lead_name.gpa(english)}    ${lead_name.grade(english)}
     Mathematics    ${math}           ${lead_name.gpa(math)}       ${lead_name.grade(math)}

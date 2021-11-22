@@ -68,7 +68,7 @@ let MainFunction = function(){
             return "Your are failed";
         }
         else{
-          return ` Your cgpa ${cgpa} & CGPA =${lead_name.cgpaGrade(cgpa)} `;  //lead_name is variable name of  mainfunction(must be used)
+          return `Your cgpa ${cgpa} & CGPA =${lead_name.cgpaGrade(cgpa)}`;  //lead_name is variable name of  mainfunction(must be used)
         }
     }
     
