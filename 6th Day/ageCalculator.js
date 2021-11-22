@@ -10,7 +10,6 @@ let MainFunction=function(){
     }
 }
 
-
 let year=parseInt(prompt("please Type your Birth Year"));
 
 let lead_Function=new MainFunction();
