@@ -2,6 +2,7 @@
 
 let studentName = prompt("Please Type Your Name");
 let studentroll = prompt("Please Type Your Roll");
+
 let bangla = parseInt(prompt("please Type Your Bangla Mark"));
 let english = parseInt(prompt("please Type Your English Mark"));
 let math = parseInt(prompt("please Type Your Math Mark"));
