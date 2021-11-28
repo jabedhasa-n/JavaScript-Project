@@ -15,9 +15,11 @@ const devTools=[
 ];
 
 
-for(let i =0; i<devTools.length;i++){
 
-    console.log(devTools[i]);
-
-    // if(devTools[i])
+let sum=0;
+for(let j=0;j<devTools.length;j++){
+   
+    console.log(devTools[j][4]);
+    sum= sum+devTools[j][4];
 }
+console.log('TotalIncome '+sum);
