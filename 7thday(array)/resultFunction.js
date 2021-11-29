@@ -1,102 +1,39 @@
+// - Create an array data structure with some data of fifth-grade students where their results will be published based on GPA and grade based on. Publish CGPA and final grade in the final result
 
-let MainFunction = function(){
+const fifthStudent=[
+    [1,'Imran','Mohib',50,60,70,80,90,95],
+    [2,'akbar','Mohib',30,60,80,90,50,55],
+    [3,'jamal','Mohib',30,60,40,80,93,95],
+    [4,'babor','Mohib',50,60,70,80,90,65],
+    [5,'abul','Mohib',50,60,60,80,90,55],
+    [6,'kabul','Mohib',50,60,70,80,90,45],
+    [7,'mofiz','Mohib',40,60,70,80,90,55],
+    [8,'ashiq','Mohib',50,60,30,70,90,45],
+    [9,'iqbal','Mohib',30,60,40,80,80,95],
+    [10,'manik','Mohib',50,70,70,80,60,95],
+]
+ 
 
-    this.gpa = function (marks){
-        let gpa;
-        if (marks>=0 && marks<=32){
-            gpa=0;
-        }
-        else if (marks>=33 && marks<=39){
-            gpa=1;
-        }
-        else if (marks>=40 && marks<=49){
-            gpa=2;
-        }
-        else if (marks>=50 && marks<=59){
-            gpa=3;
-        }
-        else if (marks>=60 && marks<=69){
-            gpa=4;
-        }
-        else if (marks>=70 && marks<=79){
-            gpa=4.5;
-        }
-        else if (marks>=80 && marks<=100){
-            gpa=5;
-        }
-        else{
-            console.log("please Type again");
-        }
-        return gpa;
-    }
-    
-    
-   this.grade = function (marks) {
-        let grade;
-        if (marks>=0 && marks<=32){
-            grade = "F";
-        }
-        else if (marks>=33 && marks<=39){
-            grade ="D";
-        }
-        else if (marks>=40 && marks<=49){
-            grade ="C";
-        }
-        else if (marks>=50 && marks<=59){
-            grade = "B-";
-        }
-        else if (marks>=50 && marks<=59){
-            grade="B";
-        }
-        else if (marks>=60 && marks<=69){
-            grade="A-";
-        }
-        else if (marks>=70 && marks<=79){
-            grade="A";
-        }
-        else if (marks>=80 && marks<=100){
-            grade="A+";
-        }
-        return grade;
-    }
-        
-    this.cgpa=function (bangla,english,math){
-    
-        let cgpa=(bangla + english + math)/3;
-    
-        if(bangla==0 || english ==0 || math==0){
-            return "Your are failed";
-        }
-        else{
-          return `Your cgpa ${cgpa} & CGPA =${lead_name.cgpaGrade(cgpa)}`;  //lead_name is variable name of  mainfunction(must be used)
-        }
-    }
-    
-    this.cgpaGrade=function (cgpa){
-    
-        if(cgpa>=0 && cgpa<=1){
-            return "F" ;
-        }
-        else if(cgpa>=1 && cgpa<2){
-            return "D" ;
-        }
-        else if(cgpa>=2 && cgpa<3){
-            return "C";
-        }
-        else if(cgpa>=3 && cgpa<4){
-            return "B" ;
-        }
-        else if(cgpa>=4 && cgpa<4.5){
-            return "A-" ;
-        }
-        else if(cgpa>=4.5 && cgpa<5){
-            return "A-" ;
-        }
-        else if(cgpa==5){
-            return "A+" ;
-        }
+let MainFunction=function(){
+    this.result=function(a,b,c,d,e,f){
+        let sum=0;
+        sum=(a+b+c+d+e+f)/6;
+        return sum;
     }
 }
 
 
+let lead_name= new MainFunction;
 
+for(let i=0;i<fifthStudent.length;i++){
+    console.log(
+        `
+        ${fifthStudent[i][0]}
+        ${fifthStudent[i][1]}
+        ${fifthStudent[i][2]}
+        ======================
+        gpa=${lead_name.result(fifthStudent[i][3],fifthStudent[i][4],fifthStudent[i][5],fifthStudent[i][6],fifthStudent[i][7],fifthStudent[i][8])};
+        `
+     )
+    
+}
