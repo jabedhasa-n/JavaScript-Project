@@ -16,9 +16,16 @@ const fifthStudent=[
 
 let MainFunction=function(){
     this.result=function(a,b,c,d,e,f){
-        let sum=0;
-        sum=(a+b+c+d+e+f)/6;
-        return sum;
+        
+        if(a<33 || b<33 || c<33 || d<33 || e<33 || f<33){
+            return "You are fail "
+        }
+        else {
+            let sum=0;
+             sum=(a+b+c+d+e+f)/6;
+             sum;
+            return `You are pass, Your Average mark ${sum}` 
+        }
     }
 }
 
@@ -37,3 +44,5 @@ for(let i=0;i<fifthStudent.length;i++){
      )
     
 }
+
+
