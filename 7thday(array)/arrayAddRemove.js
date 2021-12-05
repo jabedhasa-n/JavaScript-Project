@@ -38,3 +38,31 @@ console.log(student);
 //[3, 4, 5]
 console.log(number);
 //[3, 4, 5, 6, 7]
+
+
+// Array to string conversion 
+// -> toString
+// -> join
+
+
+let stringName=studentName.toString();
+console.log(stringName);
+
+stringName=studentName.join();
+console.log(stringName);
+// string to Array conversion 
+// -> split 
+const arrayName="how are you going?"
+stringName=arrayName.split();
+console.log(stringName);
+
+//sort and reverse
+const alphabet =['a','c','b','d','e']
+alphabet.sort().reverse() 
+console.log(alphabet);
+// cpncat 
+const alPhabet =['a','c','b','d','e']
+const againAlPa=['f','g','h']
+let newAlphabet=alPhabet.concat(againAlPa);
+
+console.log(newAlphabet);
