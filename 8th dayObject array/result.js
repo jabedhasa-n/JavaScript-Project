@@ -18,8 +18,6 @@ const firstName=[
 
 
 
-
-
 firstName.forEach((data)=>{
     console.log(data.name);
 })
