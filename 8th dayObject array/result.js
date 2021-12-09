@@ -1,44 +1,19 @@
-bardate=['sun','mon','tue','wed','thu','fri','sat']
+const date =new Date();
 
-
-let todaydate = new Date();
-
-console.log(`
-          
-         ${bardate[todaydate.getDay()]}
-
-`)
+console.log(date.getTime())
 
 
 
-//swith statement
-let day ;
-switch (todaydate.getDay()){
-  case 3:
-    day="thursday";
-    break;
-  case 4:
-   day= "thursday";
-    break;
-  case 5:
-    day="thursday";
-    break;
-  case 6:
-    day="thursday";
-    break;
+const newdate =new Date(1639060783543);
 
-  default:
-    break;
-}
+console.log(newdate);
 
-console.log(day)
 
-//function day 
+let birthyear=new Date('2002-12-24 8:43:40')
 
-myfunction =(date)=>{
-  bardate=['sun','mon','tue','wed','thu','fri','sat']
-  return bardate[date]
-}
+console.log(birthyear.getTime())
 
-todaydate = new Date();
-console.log(myfunction(todaydate.getDay()));
+birthyear=new Date(1040697820000)
+ b  
+console.log(birthyear)
+
