@@ -20,6 +20,20 @@
 // }
 
 
+// [
+//     {
+
+//         "name" :"Jabed",
+//         "age":20,
+//         "skill":"Jave"
+//     },
+//     {
+
+//         "name" :"fahad",
+//         "age":20,
+//         "skill":"python"
+//     }
+// ]
 
 
 
