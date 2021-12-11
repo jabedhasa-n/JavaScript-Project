@@ -1,21 +1,13 @@
+[
+    {
+    "name" :"Jabed",
+    "age":20,
+    "skill":"Jave"
+    },
+    {
 
-
-
-
-{
-    "employee":[
-        {
-    
-            "name" :"Jabed",
-            "age":20,
-            "skill":"Jave"
-        },
-        {
-    
-    
-            "name" :"fahad",
-            "age":20,
-            "skill":"python"
-        }
-    ]
-}
+   "name" :"fahad",
+   "age":20,
+   "skill":"python"
+    }
+]
