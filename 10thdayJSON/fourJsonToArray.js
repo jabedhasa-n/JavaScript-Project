@@ -92,7 +92,7 @@ data=`{
 
 }`
 
- obj=JSON.parse(data)
- console.log(obj)
+ obj=JSON.parse(data);
+ console.log(obj);
 
 
