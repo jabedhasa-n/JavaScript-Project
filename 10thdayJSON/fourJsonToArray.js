@@ -1,3 +1,5 @@
+//  Basic format no 1
+
 let data=`{
     "Name":"Jabed",
     "age":"20",
@@ -10,7 +12,7 @@ console.log(obj)
 
 
 
-
+//  Basic format no 2
 
 data=`{
     {
@@ -32,7 +34,7 @@ data=`{
 
 
 
-
+//  Basic format no 3
 
 data=`{
     "employee":[
@@ -56,7 +58,7 @@ data=`{
 
 
 
-
+//  Basic format no 4
 
 data=`{
     "employee":[
