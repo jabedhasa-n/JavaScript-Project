@@ -1,4 +1,32 @@
+
+
+/// we can weite json file below comment line 
+// {
+//     "employee":[
+//         {
+    
+//             "name" :"Jabed",
+//             "age":20,
+//             "skill":"Jave"
+//         },
+//         {
+    
+    
+//             "name" :"fahad",
+//             "age":20,
+//             "skill":"python"
+//         }
+//     ]
+// }
+
+
+
+
+
+
+
 ///we mus use template literal and then 
+
 const persons=
     `{
         "employees":[
