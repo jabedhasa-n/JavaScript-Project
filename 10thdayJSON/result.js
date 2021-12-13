@@ -1,19 +1,3 @@
-// const date =new Date();
-
-// console.log(date.getTime())
-
-// const newdate =new Date(1639060783543);
-
-// console.log(newdate);
-
-// let birthyear=new Date('2002-12-24 8:43:40')
-
-// console.log(birthyear.getTime())
-
-// birthyear=new Date(1040697820000)
-//  b  
-// console.log(birthyear)
-
 // Create an array  and object data structure with some data of fifth grade students where their results will be published based on GPA and grade based on. Publish CGPA and final grade in the final result and finally convert it to a JSON String 
 
 
