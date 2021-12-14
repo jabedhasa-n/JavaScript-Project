@@ -7,23 +7,23 @@ let student =[
        name : "Jabed",
        fatherName:"Mohib Ullah",
        bangla : 40,
-       english : 50,
+       english : 30,
        physics : 60,
        chemistry : 70,
        math : 80,
     },
     {
        name : "saki",
-       fatherName:"Mohib Ullah",
+       fatherName:"Jafor Ullah",
        bangla : 40,
-       english : 50,
+       english : 70,
        physics : 60,
        chemistry : 70,
        math : 80,
     },
     {
        name : "imran",
-       fatherName:"Mohib Ullah",
+       fatherName:"Kabir Hossen",
        bangla : 40,
        english : 60,
        physics : 60,
@@ -67,4 +67,6 @@ for(let i=0;i<student.length;i++){
     )
    
 }
+
+console.log(JSON.stringify(student));
 
