@@ -1,48 +1,16 @@
+let bdNumber="+8801793534981";
+
+let pattern=/^(01|\+8801)[0-9]{9}$/
+console.log(pattern.test(bdNumber))
 
 
-let txt ="My name is jabed.I love Js";
-
-// let pattern=/love|jabed|My/;
-let pattern=/Love|Jabed|my/;
-
-console.log(pattern.test(txt));
 
 
-txt ="I love You";
-pattern=/I love You/;
+let myEmail="jabedhasan231@gmail.com";
 
-console.log(pattern.test(txt));
-
-
-txt ="Ami love You";
-pattern=/(I|ami) love You/;
-
-console.log(pattern.test(txt));
-
-txt ="JavaScript";
-pattern=/^J.vaScript$/;
-
-console.log(pattern.test(txt));
-
-txt ="JavaScript";
-pattern=/^J[a-z]vaScript$/;
-
-console.log(pattern.test(txt));
-
-txt ="J@vaScript";
-pattern=/^J[a-zA-Z@]vaScript$/;
-
-console.log(pattern.test(txt));
+pattern=/^[a-z0-9\.]*@[a-z0-9\-]*\.[a-z]{2,5}$/
+console.log(pattern.test(myEmail))
 
 
-txt ="J@afavaScript";
-pattern=/^J[a-zA-Z@]{2,3}vaScript$/;
-
-console.log(pattern.test(txt));
-
-txt ="J@vaScript";
-pattern=/^J[a-zA-Z@]vaScript$/;
-
-console.log(pattern.test(txt));
 
 
