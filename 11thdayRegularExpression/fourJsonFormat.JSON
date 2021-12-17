@@ -1,0 +1,96 @@
+
+//  Basic format no 1
+
+ 
+ {
+     "Name":"Jabed",
+     "age":"20",
+     "salary":"20K"
+ }
+
+
+
+
+
+//  another fomat is 2
+
+ [
+     {
+     "name" :"Jabed",
+     "age":20,
+     "skill":"Jave"
+     },
+     {
+ 
+    "name" :"fahad",
+    "age":20,
+    "skill":"python"
+     }
+]
+
+
+
+
+//   another format is 3
+
+
+  {"employee":[
+      {
+  
+      "name" :"Jabed",
+      "age":20,
+      "skill":"Jave"
+      },
+      {
+  
+           "name" :"fahad",
+           "age":20,
+           "skill":"python"
+      }
+   ]
+  }
+
+
+// Number format 4
+
+{
+    "employee":[
+    {
+
+    "name" :"Jabed",
+    "age":20,
+    "skill":"Jave"
+    },
+    {
+
+         "name" :"fahad",
+         "age":20,
+         "skill":"python"
+    }
+ ],
+    "person":[
+    {
+
+    "name" :"Jabed",
+    "age":20,
+    "skill":"Jave"
+    },
+    {
+
+        "name" :"fahad",
+        "age":20,
+        "skill":"python"
+    }
+ ]
+
+}
+
+
+
+
+
+
+
+
+
+
