@@ -2,38 +2,17 @@
   padding: 0;
   margin: 0;
 }
-section {
-  max-width: 900px;
+.button {
+  text-align: center;
+  margin-top: 50px;
+}
+.button-click {
+  padding: 20px 50px;
+  background-color: royalblue;
+  color: white;
+  border: transparent;
   margin: auto;
-}
-.team {
-  /* display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap; */
-}
-
-.team-memebrs {
   text-align: center;
-  width: 260px;
-  margin: auto;
-}
-.team-memebrs img {
-  width: 100px;
-  border-radius: 50%;
-}
-table {
-  width: 100%;
-}
-table tr th {
-  background-color: rebeccapurple;
-  text-align: center;
-}
-table tr td {
-  background-color: red;
-  text-align: center;
-}
-table tr td img {
-  width: 70px;
   display: inline-block;
-  text-align: center;
+  cursor: pointer;
 }
