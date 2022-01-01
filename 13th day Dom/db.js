@@ -1,29 +1,20 @@
-const button = document.querySelector(".button .button-click");
+const button = document.querySelector(".card-footer");
+const text = document.querySelector("#text");
+const number = document.querySelector("#number");
+const submit = document.querySelector("#submit-id");
 
-// button.addEventListener("click", function () {
-//   alert();
-// });
+// submit.addEventListener("click", () => {
 
-// button.addEventListener("dblclick", function () {
-//   alert();
-// });
-// button.addEventListener("mouseenter", function () {
-//   alert();
-// });
-// button.addEventListener("mouseleave", function () {
-//   alert();
-// });
-// button.addEventListener("mousedown", function () {
-//   alert();
 // });
 
-// button.addEventListener("mouseup", function () {
-//   alert();
-// });
-
-// button.addEventListener("click", () => {
-//   button.nextElementSibling.innerHTML = "We love Js";
-// });
-button.addEventListener("mouseover", () => {
-  button.nextElementSibling.innerHTML = "We love Js";
+submit.addEventListener("click", () => {
+  button.innerHTML = agecall(text.value, number.value);
+  text.value = "";
+  number.value = "";
 });
+
+function agecall(name, year) {
+  let date = new Date();
+  age = date.getFullYear() - year;
+  return `Hi ${name} ,your age is ${age}`;
+}
