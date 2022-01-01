@@ -1,6 +1,7 @@
 const name = document.querySelector("#name");
 const number = document.querySelector("#number");
 const password = document.querySelector("#password");
+const password = document.querySelector("#password-check");
 const submit = document.querySelector("#submit");
 const text = document.querySelector(".form-footer");
 
