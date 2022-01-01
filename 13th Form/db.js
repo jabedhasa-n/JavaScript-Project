@@ -1,20 +1,26 @@
-const button = document.querySelector(".card-footer");
-const text = document.querySelector("#text");
+const name = document.querySelector("#name");
 const number = document.querySelector("#number");
-const submit = document.querySelector("#submit-id");
+const password = document.querySelector("#password");
+const submit = document.querySelector("#submit");
+const text = document.querySelector(".form-footer");
 
-// submit.addEventListener("click", () => {
-
+// name.addEventListener("keyup", () => {
+//   text.innerHTML = name.value;
 // });
 
 submit.addEventListener("click", () => {
-  button.innerHTML = agecall(text.value, number.value);
-  text.value = "";
-  number.value = "";
+  if (name.value == "" || number.value == "" || password.value == "") {
+    text.innerHTML = "All fields are required";
+  } else {
+    text.innerHTML = "Thank You";
+  }
 });
 
-function agecall(name, year) {
-  let date = new Date();
-  age = date.getFullYear() - year;
-  return `Hi ${name} ,your age is ${age}`;
-}
+// let patter = /^[a-z0-9]{2,5}[A-Z]{1,}$/;
+// name.addEventListener("keyup", () => {
+//   if (patter.test(name.value) == false) {
+//     text.innerHTML = "you have to write a-z or 0-9";
+//   } else {
+//     text.innerHTML = "Thank you guys";
+//   }
+// });
