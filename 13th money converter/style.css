@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: blue;
+	font-family: 'Open Sans', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	min-height: 100vh;
+	margin-left: 1400px;
+}
+
+.container {
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(39, 32, 32, 0.3);
+	overflow: hidden;
+	width: 400px;
+	max-width: 100%;
+}
+
+form{
+	display: flex;
+	justify-content: space-between;
+}

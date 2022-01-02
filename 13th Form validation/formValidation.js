@@ -14,8 +14,13 @@ password.addEventListener('keyup',()=>{
 		message.innerText='username should be at least 6';
 
 	}
+	else if(password.value.length >16){
+		message.innerText='username should be more 16';
+	}
 	else{
 		message.innerText=' ';
+		message.classList.add("success");
+		message.style.border='1px solid red';
 	}
 })
 
