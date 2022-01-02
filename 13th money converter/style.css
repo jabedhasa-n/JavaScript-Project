@@ -27,4 +27,16 @@ body {
 form{
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.form-group {
+	position: relative;
+}
+.form-group small{
+	position: absolute;
+	top: 80px;
+	left: 0px;
+	font-weight: bold;
+	text-transform: capitalize;
 }

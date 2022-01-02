@@ -16,15 +16,15 @@
 <body>
   <div class="container">
     <h1 class="text-center mb-3">Money Convert</h1>
-    <form class="mb-5" action="">
+    <form id="form" class="mb-5" action="">
       <div class="form-group">
         <label for=""></label>
-        <input type="text" class="form-control" name="" id="">
+        <input type="text" class="form-control" name="" id="money">
         <small></small>
       </div>
       <div class="form-group">
         <label for="">Money</label>
-        <select class="form-control" name="" id="">
+        <select class="form-control" name="" id="stableMoney">
           <option>USD</option>
           <option>BD</option>
           <option>UK</option>
@@ -32,12 +32,13 @@
       </div>
       <div class="form-group">
         <label for="">Convert</label>
-        <select class="form-control" name="" id="">
-          <option>USD</option>
+        <select class="form-control" name="" id="convertMoney">
           <option>BD</option>
+          <option>USD</option>
           <option>UK</option>
         </select>
       </div>
+      <input id="convert" type="submit" class="btn mt-5 btn-primary" value="Converter">
     </form>
   </div>
   <!-- SOCIAL PANEL HTML -->
