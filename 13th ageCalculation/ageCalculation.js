@@ -1,7 +1,5 @@
 const name = document.querySelector("#name");
 const number = document.querySelector("#number");
-const password = document.querySelector("#password");
-const password = document.querySelector("#password-check");
 const submit = document.querySelector("#submit");
 const text = document.querySelector(".form-footer");
 
@@ -10,10 +8,12 @@ const text = document.querySelector(".form-footer");
 // });
 
 submit.addEventListener("click", () => {
-  if (name.value == "" || number.value == "" || password.value == "") {
+  if (name.value == "" || number.value == "") {
     text.innerHTML = "All fields are required";
   } else {
-    text.innerHTML = "Thank You";
+    text.innerHTML = agecall(name.value, number.value);
+    name.value = "";
+    number.value = "";
   }
 });
 
@@ -25,3 +25,10 @@ submit.addEventListener("click", () => {
 //     text.innerHTML = "Thank you guys";
 //   }
 // });
+
+
+function agecall(name, year) {
+  let date = new Date();
+  age = date.getFullYear() - year;
+  return `Hi ${name} ,Your Age is ${age}`;
+}
