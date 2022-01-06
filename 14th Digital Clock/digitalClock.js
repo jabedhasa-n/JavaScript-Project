@@ -22,8 +22,6 @@ const minute=document.querySelector(".boxminute h6")
 const second=document.querySelector(".boxsecond h6")
 
 
-
-
 setInterval(()=>{
     let date=new Date();
     let nowHour=zero(date.getHours());
@@ -33,57 +31,64 @@ setInterval(()=>{
     minute.innerHTML=nowMinute;
     second.innerHTML=nowSceond;
 },1000)
+
 function zero(date){
-    if(date<10){
-        return `0${date}`
-    }
-    else{
-        return date;
-    }
+  if(date<10){
+      return `0${date}`
+  }
+  else{
+      return date;
+  }
 };
 
 
+const inputlabel1=document.querySelector('#sun');
+const inputlabel2=document.querySelector('#mon');
+const inputlabel3=document.querySelector('#tue');
+const inputlabel4=document.querySelector('#wed');
+const inputlabel5=document.querySelector('#thu');
+const inputlabel6=document.querySelector('#fri');
+const inputlabel7=document.querySelector('#sat');
+
 setInterval(()=>{
   // const inputbutton=document.querySelector('input[type="radio"]:checked');
-  const inputlabel1=document.querySelector('#sun');
-  const inputlabel2=document.querySelector('#mon');
-  const inputlabel3=document.querySelector('#tue');
-  const inputlabel4=document.querySelector('#wed');
-  const inputlabel5=document.querySelector('#thu');
-  const inputlabel6=document.querySelector('#fri');
-  const inputlabel7=document.querySelector('#sat');
-  const message=document.querySelector("form p");
   
   let dayToday=new Date();
   let day=dayToday.getDay();
   
   switch (day) {
       case 0:
-        day = "Sunday";
         inputlabel1.style.color='red';
+        color(day);
         break;
       case 1:
-        day = "Monday";
         inputlabel2.style.color='red';
+        color(day)
         break;
       case 2:
-         day = "Tuesday";
          inputlabel3.style.color='red';
+         color(day)
         break;
       case 3:
         inputlabel4.style.color='red';
+        color(day)
         break;
       case 4:
         inputlabel5.style.color='red';
+        color(day)
         break;
       case 5:
-        day = "Friday";
         inputlabel6.style.color='red';
+        color(day);
         break;
       case 6:
-        inputlabel5.style.color='red';
-        day = "Saturday";
+        color(day)
+        inputlabel7.style.color='red';
     }
 },1000)
 
 
+function color(today){
+  const label=[inputlabel1,inputlabel2,inputlabel3,inputlabel4,inputlabel5,inputlabel6,inputlabel7];
+  label[today].classList.add('active');
+}

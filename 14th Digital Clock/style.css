@@ -33,11 +33,50 @@ h6{
 	font-family: 'Orbitron', sans-serif;
 	font-size: 35px;
 }
-
+form {
+	display: flex;
+	justify-content: space-evenly;
+	padding-bottom: 10px;
+}
 form label{
 	color: white;
 	font-size: 14px;
+	position: relative;
 }
-p{
-	color: red;
+.active{
+	position: relative;
+}
+form .active::before{
+	content: '';
+	position: absolute;
+	top: 5px;
+	left: -15px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: red;
+}
+form label::before{
+	content: '';
+	position: absolute;
+	top: 5px;
+	left: -15px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	/* background-color: red; */
+}
+form label::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: -18px;
+    width: 10px;
+    height: 10px;
+    padding: 7px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+form input{
+	display: none;
 }
