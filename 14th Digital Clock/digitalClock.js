@@ -44,7 +44,7 @@ function zero(date){
 
 
 setInterval(()=>{
-  const inputbutton=document.querySelector('input[type="radio"]:checked');
+  // const inputbutton=document.querySelector('input[type="radio"]:checked');
   const inputlabel1=document.querySelector('#sun');
   const inputlabel2=document.querySelector('#mon');
   const inputlabel3=document.querySelector('#tue');
