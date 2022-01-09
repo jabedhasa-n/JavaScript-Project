@@ -20,7 +20,7 @@ password.addEventListener('keyup',()=>{
 	else{
 		message.innerText=' ';
 		message.classList.add("success");
-		message.style.border='1px solid red';
+		message.style.border='1px solid blue';
 	}
 })
 
