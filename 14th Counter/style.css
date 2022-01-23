@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: blue;
+	font-family: 'Open Sans', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	min-height: 100vh;
+}
+
+.container {
+	background-color: #000;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(39, 32, 32, 0.3);
+	width: 400px;
+	max-width: 100%;
+}
+.card{
+	background-color: #000;
+}
+span{
+	color: white;
+}
+h6{
+	color: red;
+	font-family: 'Orbitron', sans-serif;
+	font-size: 35px;
+}
+form {
+	display: flex;
+	justify-content: space-evenly;
+	padding-bottom: 10px;
+}
+form label{
+	color: white;
+	font-size: 14px;
+	position: relative;
+}
+.active{
+	position: relative;
+}
+form .active::before{
+	content: '';
+	position: absolute;
+	top: 5px;
+	left: -15px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: red;
+}
+form label::before{
+	content: '';
+	position: absolute;
+	top: 5px;
+	left: -15px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	/* background-color: red; */
+}
+form label::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: -18px;
+    width: 10px;
+    height: 10px;
+    padding: 7px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+form input{
+	display: none;
+}
