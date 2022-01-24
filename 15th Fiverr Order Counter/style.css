@@ -9,22 +9,17 @@ body {
 	background-color: blue;
 	font-family: 'Open Sans', sans-serif;
 }
+.fiverr-wrapper{
+	width: 600px;
+	margin: 20px auto;
+}
 
-h1{
+.counter{
 	color: white;
-	font-size: 150px;
+	text-align: center;
 }
-
-.progressbarr{
-	border-radius: 100px;
-	border: 1px solid white;
-	position: relative;
-	z-index: 9999;
-	background-color: gray;
-}
-.progress{
-	width: 100%;
-	height: 30px;
-	background-color: red;
-	border-radius: 100px;
+.counter span{
+	font-size: 100px;
+	font-weight: 600;
+	vertical-align: middle;
 }
