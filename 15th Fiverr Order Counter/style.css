@@ -6,20 +6,21 @@
 }
 
 body {
-	background-color: blue;
+	background-color: rgb(255, 166, 0);
 	font-family: 'Open Sans', sans-serif;
 }
 .fiverr-wrapper{
 	width: 600px;
 	margin: 20px auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .counter{
 	color: white;
 	text-align: center;
-}
-.counter span{
 	font-size: 100px;
-	font-weight: 600;
+	font-weight: 900;
 	vertical-align: middle;
 }
