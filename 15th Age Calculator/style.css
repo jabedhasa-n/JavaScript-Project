@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500&display=swap');
+
+
+
+body {
+	background-color: rgb(255, 166, 0);
+	font-family: 'Open Sans', sans-serif;
+}
+.agecalculation{
+	width: 600px;
+	margin: 20px auto;
+	/* display: flex;
+	justify-content: center;
+	align-items: center; */
+}
+
+.age{
+	color: white;
+	text-align: center;
+	font-size: 30px;
+	font-weight: 900;
+	vertical-align: middle;
+}
