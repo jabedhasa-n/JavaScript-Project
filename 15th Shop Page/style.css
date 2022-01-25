@@ -6,11 +6,11 @@ body {
 	background-color: rgb(255, 166, 0);
 	font-family: 'Open Sans', sans-serif;
 }
-.todo{
-	width: 600px;
-	margin: 20px auto;
+
+.form-group{
+	margin: 15px 0;
 }
 
-form{
-	display: flex;
+.product-add-box{
+	display: none;
 }

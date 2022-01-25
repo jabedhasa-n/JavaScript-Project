@@ -14,40 +14,49 @@
 </head>
 
 <body>
-  <div class="todo">
-    <div class="card">
-      <div class="card-body">
-        <form id="todoadd" action="">
-          <div class="form-group">
-            <input name="opt_name" class="form-control" type="text">
+  <div class="container">
+    <div class="row justify-content-center my-5">
+      <div class="col-md-6">
+        <button class="btn btn-primary" id="add-product">Add New Product</button>
+        <br>
+        <br>
+        <div class="card product-add-box">
+          <div class="card-body">
+            <button id="sess" class="btn-close">&times;</button>
+            <h2>Add new Product</h2>
+            <form id="product">
+              <div class="form-group">
+                <input name="name" type="text" class="form-control" placeholder="Product Name">
+              </div>
+              <div class="form-group">
+                <input name="price" type="text" class="form-control" placeholder="Product Price">
+              </div>
+              <div class="form-group">
+                <input name="sale_price" type="text" class="form-control" placeholder="Sale Price">
+              </div>
+              <div class="form-group">
+                <input name="photo" type="text" class="form-control" placeholder="Add Product Photo Link">
+              </div>
+              <div class="form-group">
+                <input type="submit" class="btn btn-primary w-100" value="Add new Product">
+              </div>
+            </form>
           </div>
-          <div class="form-group mx-2">
-            <select class="form-control" name="opt" id="">
-              <option>Important</option>
-              <option>Unimportant</option>
-              <option>Unneccseary</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <input class="btn btn-primary" value="Add" type="submit">
-          </div>
-        </form>
+        </div>
       </div>
     </div>
+    <div class="products">
+      <div id="plist" class="row">
 
-
-    <hr>
-
-    <ul id="list" class="list-group">
-    </ul>
-
+      </div>
+    </div>
   </div>
 
 
 
   <!-- SOCIAL PANEL HTML -->
   <script src="function.js"></script>
-  <script src="todo.js"></script>
+  <script src="shop.js"></script>
 </body>
 
 </html>
