@@ -33,7 +33,7 @@ age_cal.addEventListener('submit',function(e){
     diffYear;
   }
 
-
+  
   if(diffMonth<0){
     diffMonth= diffMonth+12;
   }

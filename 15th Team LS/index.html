@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mern Stack Development</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="row my-5">
+      <div class="col-md-3">
+        <div class="card">
+          <div class="card-body">
+            <h2>Add devs</h2>
+            <form id="dev_form">
+              <div class="form-group">
+                <input name="name" type="text" placeholder="Name" class="form-control">
+              </div>
+              <div class="form-group">
+                <br>
+                skills
+                <hr>
+                <input name="skill" type="checkbox" id="react" value="React Developer"> <label for="react">React
+                  Developer</label> <br>
+                <input name="skill" type="checkbox" id="laravel" value="Laravel Developer"> <label for="laravel">Laravel
+                  Developer</label> <br>
+                <input name="skill" type="checkbox" id="python" value="Python Developer"> <label for="python">Python
+                  Developer</label> <br>
+              </div>
+              <div class="form-group">
+                <br>
+                Gender
+                <hr>
+                <input type="radio" name="gender" id="male" value="Male"> <label for="male">Male</label> <br>
+                <input type="radio" name="gender" id="female" value="Female"> <label for="female">Female</label> <br>
+              </div>
+              <div class="form-group">
+                <br>
+                Photo
+                <hr>
+                <input type="text" class="form-control" name="photo" id="photo" placeholder="Photo">
+              </div>
+              <div class="form-group mt-3">
+                <input class="btn btn-primary w-100" type="submit" id="submit" value="Add New Devs">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-9">
+        <div class="row devs_area">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- SOCIAL PANEL HTML -->
+  <script src="function.js"></script>
+  <script src="team.js"></script>
+</body>
+
+</html>
