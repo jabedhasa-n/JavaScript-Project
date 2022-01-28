@@ -22,11 +22,15 @@ product.addEventListener('submit',function(e){
   let sale_price=this.querySelector('input[name="sale_price"]').value;
   let photo=this.querySelector('input[name="photo"]').value;
 
-  console.log(nameProduct + price + sale_price + photo)  
+  // console.log(nameProduct + price + sale_price + photo)  
+
+  /**
+   * create an arry to keep data from local storage
+   */
   let product_arr;
 
   if(dataGet('products')){
-    product_arr=dataGet('product');
+    product_arr=dataGet('products');
   }
 
   else{
@@ -34,34 +38,40 @@ product.addEventListener('submit',function(e){
   }
 
   product_arr.push({
-    name:name,
-    price:price,
-    sale:sale,
-    photo:photo
+    name  :nameProduct,
+    price :price,
+    sale  :sale_price,
+    photo :photo
 
-  })
+  });
 
   console.log(product_arr);
 
+  datasend('products',product_arr)
 
+  allProduct();
 });
 
+allProduct();
+function allProduct(){
 
-let products=dataGet('products');
-
-
-products.map( data =>{
-  plist.innerHTML+=`
-  <div class="col-md-4 my-3">
-          <div class="card">
-            <img class="card-img" src="https://pngimg.com/uploads/dress_shirt/dress_shirt_PNG8117.png" alt="">
-            <div class="card-body">
-              <h3>Product Name</h3>
-              <p><span class="regular-price">$200</span><span class="sale-price">$200</span></p>
-              <br>
-              <button class="btn btn-success">Add to cart</button>
+  let all_products=dataGet('products');
+  let alldata='';
+  all_products.map( data =>{
+    alldata+=`
+    <div class="col-md-4 my-3">
+            <div class="card">
+              <img class="card-img" src="${data.photo}" alt="">
+              <div class="card-body">
+                <h3>${data.name}</h3>
+                <p><span class="regular-price">${data.price}</span><span class="sale-price">${data.sale}</span></p>
+                <br>
+                <button class="btn btn-success">Add to cart</button>
+              </div>
             </div>
           </div>
-        </div>
-  `
-})
+    `
+  })
+
+  plist.innerHTML=alldata;
+} 

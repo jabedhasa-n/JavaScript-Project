@@ -56,7 +56,7 @@ function allDevs(){
       lists+='<li class="list-group-item"> '+list+' </li>'
     });
     data+= `
-    <div class="col-md-4">
+    <div class="col-md-4 my-3">
     <div class="card">
       <img style="width:100%; height: 250px; object-fit: cover;" class="card-img"
         src="${d.photo}"
