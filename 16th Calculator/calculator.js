@@ -1,22 +1,29 @@
-const hour=document.querySelector('.hour');
-const min=document.querySelector('.min');
-const sec=document.querySelector('.sec');
- 
-// console.log(currentsec,currentmin,currenthour);
 
+const number=document.querySelector('.number')
+const result=document.querySelector('.result')
 
-setInterval(()=>{
-  let time=new Date();
+let cal_data=[]
+let number_monitor='';
+function valueGet(val){
+    cal_data.push(val);
+  number_monitor =cal_data.join('');
 
+number.innerHTML=number_monitor;
+result.innerHTML=0;
 
-  let currentsec=time.getSeconds();
-  let currentmin=time.getMinutes();
-  let currenthour=time.getHours();
+}
 
-  console.log(currentmin)
+function final_result(){
+    result.innerHTML=eval(number_monitor); 
+}
 
-  min.style.transform=`rotate(${6*currentmin+currentsec*(1/10)}deg)`;
-  sec.style.transform=`rotate(${6*currentsec}deg)`;
-  hour.style.transform=`rotate(${30*currenthour+currentmin*(1/2)}deg)`;
- 
-},1000)
+function digit_clear(){
+    cal_data.pop();
+    number.innerHTML=cal_data.join('');
+}
+
+function all_clear(){
+    cal_data=[]
+    number.innerHTML=0;
+    result.innerHTML=0;
+}

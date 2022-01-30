@@ -16,12 +16,33 @@
 <body>
 
   <div class="container">
-    <div class="row">
-      <div class="col">
-        <div class="watch shadow-lg">
-          <div class="hour"></div>
-          <div class="min"></div>
-          <div class="sec"></div>
+    <div class="row justify-content-center">
+      <div class="col-md-4">
+        <div class="cal">
+          <div class="result_moitor">
+            <div class="number">0</div>
+            <div class="result"></div>
+          </div>
+          <div class="Keyborard_monitor">
+            <button style="width:50%" onclick="all_clear()">AC</button>
+            <button style="width:50%" onclick="digit_clear()">C</button>
+            <button onclick="valueGet(7)">7</button>
+            <button onclick="valueGet(7)">8</button>
+            <button onclick="valueGet(7)">9</button>
+            <button onclick="valueGet('/')">/</button>
+            <button onclick="valueGet(4)">4</button>
+            <button onclick="valueGet(5)">5</button>
+            <button onclick="valueGet(6)">6</button>
+            <button onclick="valueGet('*')">*</button>
+            <button onclick="valueGet(1)">1</button>
+            <button onclick="valueGet(2)">2</button>
+            <button onclick="valueGet(3)">3</button>
+            <button onclick="valueGet('+')">+</button>
+            <button onclick="valueGet(0)">0</button>
+            <button onclick="valueGet('.')">.</button>
+            <button onclick="final_result()">=</button>
+            <button onclick="valueGet('-')">-</button>
+          </div>
         </div>
       </div>
     </div>

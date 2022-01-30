@@ -7,71 +7,32 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 
-.watch{
-	width: 400px;
-	height: 400px;
+
+.result_moitor{
+background-color: black;
+color: white;
+padding: 20px 10px;
+text-align: right;
+}
+.result{
+	font-size: 30px;
+	font-weight: 900;
+}
+.cal{
 	background-color: white;
-	margin: 50px auto 0;
-	background-image: url("https://thegraphicsfairy.com/wp-content/uploads/2018/10/Clock-Face-Clip-Art-Roman-Numerals-Mini-GraphicsFairy.jpg");
-	background-size: 100% 100%;
-	background-position: center center;
-	border-radius: 50%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	width: 400px;
+	margin: 100px auto 0;
 }
 
-.watch:before{
-	content:'';
-	width: 20px;
-	height: 20px;
-	background-color: #000;
-	position: absolute;
-	border-radius: 50%;
-}
-
-
-.min{
-	width: 0px;
-	height: 230px;
+.Keyborard_monitor{
 	display: flex;
-	/* background-color: red; */
-	justify-content: center;
-	transform: rotate(0deg);
+	flex-wrap: wrap;
+	box-sizing: border-box;
 }
-.min::before{
-	content: '';
-	width: 4px;
-	height: 150px;
-	background-color: blue;
-	position: absolute;
+.Keyborard_monitor button{
+	width: 25%;
+	padding: 20px 20px;
 }
-.sec{
-	width: 0px;
-	height: 230px;
-	display: flex;
-	justify-content: center;
-	transform: rotate(0deg);
+.Keyborard_monitor button:hover{
+	background-color: wheat;
 }
-.sec::before{
-	content: '';
-	width: 3px;
-	height: 150px;
-	background-color: blue;
-	position: absolute;
-}
-.hour{
-	width: 0px;
-	height: 230px;
-	display: flex;
-	justify-content: center;
-	transform: rotate(0deg);
-}
-.hour::before{
-	content: '';
-	width: 5px;
-	height: 150px;
-	background-color: blue;
-	position: absolute;
-}
-
