@@ -2,25 +2,30 @@
  * Get Elements
  */
 
-const skills=document.querySelectorAll('.skill')
-const dev_skill=document.querySelector('.dev_skill')
+const accordionClick=document.querySelectorAll('.accordion-header');
 
 
+const accordionBody=document.querySelectorAll('.accordion-body');
+const clickable=document.querySelector('#clickibale');
 
-skills.forEach(skill=>{
-    
-    skill.addEventListener('change',function(){
+
+accordionClick.forEach(data=>{
+
+
+    data.addEventListener('click',function(){
+        data.classList.toggle('active')
+        data.nextElementSibling.classList.toggle('active');
+        let add =document.querySelectorAll('.accordionBody.active')
+
+        for(let i=0;i<add.length;i++){
+            add[i].classList.remove('active');
+        }
         
-        let all_data=document.querySelectorAll('.skill:checked');
-        let data_arry=[];
-        all_data.forEach(data=>{
-            data_arry.push(data.value)
-        })
-        // console.log(data_arry)
-        let list='';
-        data_arry.map(data=>{
-            list+=` <li class="list-group-item">${data}</li>`
-        })
-        dev_skill.innerHTML=list;
-    });
+    })
+
+ 
+
+
 })
+
+

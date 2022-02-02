@@ -1,10 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500&display=swap');
 
-
+*,
+*::before,
+*::after{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
 body {
-	background-color: blue;
 	font-family: 'Open Sans', sans-serif;
+	background-color: azure;
 }
 
+.accordion{
+	width: 600px;
+	margin: 200px auto 0;
+}
+.accordion-item{
+margin-top: 20px;
+border: none;
+}
 
+.accordion-header{
+	display: flex;
+	justify-content: space-between;
+	cursor: pointer;
+	position: relative;
+	border-bottom: 1px solid #939393;
+}
+
+.accordion-header h2{
+	padding: 10px 20px;
+}
+.accordion-header::before{
+	content: '+';
+	position: absolute;
+	right: 30px;
+	top: 0px;
+	font-size: 30px;
+}
+.accordion-header.active::before{
+	content: '-';
+	font-size: 35px;
+}
+
+.accordion-body{
+	display: none;
+}
+.accordion-body.active{
+	display: block;
+}
