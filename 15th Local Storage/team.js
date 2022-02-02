@@ -37,7 +37,6 @@ dev_form.addEventListener('submit',function(e){
     photo : photo.value
   }); 
 
-
   // console.log(data_arr);
 
   datasend('devs',data_arr);
