@@ -40,36 +40,69 @@ dev_form.addEventListener('submit',function(e){
     gender:gender.value,
     photo : photo.value
   })
-  
-
   dataSend('devs',devs_arry)
- 
   allDevs();
 })
 
+
 allDevs();
-
 function allDevs(){
+  let all_devs=dataGet('devs');
 
-  let dev=dataGet('devs');
- let datas='';
-  dev.map(data=>{
-    
-    datas+=`
-    <div class="col-md-4">
+  let data='';
+
+  all_devs.map(d=>{
+
+    let lists ='';
+    d.skills.map(list=>{
+      lists+='<li class="list-group-item"> '+list+' </li>'
+    });
+    data+= `
+    <div class="col-md-4 my-3">
     <div class="card">
-      <img class="card-img" src="https://www.seekpng.com/png/detail/355-3550315_executive-man-png.png" alt="">
+      <img style="width:100%; height: 250px; object-fit: cover;" class="card-img"
+        src="${d.photo}"
+        alt="">
       <div class="card-body">
-        <h2>${data.name}</h2>
-        <h4>${data.gender}</h4>
+        <h2>${d.name}</h2>
+        <p> Gender ${d.gender}</p>
+        Skills
+        <hr>
         <ul class="list-group">
-          <li class="list-group-item">React Developer</li>
-          <li class="list-group-item">Pythoon Developer</li>
+        ${ lists} 
         </ul>
       </div>
     </div>
   </div>
-  `;
-})
-devs_area.innerHTML=datas;
+    `;
+  })
+
+  devs_area.innerHTML=data;
 }
+
+
+
+// function allDevs(){
+
+//   let dev=dataGet('devs');
+//  let datas='';
+//   dev.map(data=>{
+    
+//     datas+=`
+//     <div class="col-md-4">
+//     <div class="card">
+//       <img class="card-img" src="https://www.seekpng.com/png/detail/355-3550315_executive-man-png.png" alt="">
+//       <div class="card-body">
+//         <h2>${data.name}</h2>
+//         <h4>${data.gender}</h4>
+//         <ul class="list-group">
+//           <li class="list-group-item">React Developer</li>
+//           <li class="list-group-item">Pythoon Developer</li>
+//         </ul>
+//       </div>
+//     </div>
+//   </div>
+//   `;
+// })
+// devs_area.innerHTML=datas;
+// }
