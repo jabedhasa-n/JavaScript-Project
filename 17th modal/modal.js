@@ -7,6 +7,7 @@
 const edit=document.querySelector('#edit')
 const wrap=document.querySelector('.modal-wrap')
 const inner=document.querySelector('.modal-inner')
+const save=document.querySelector('#save')
 const closebutton=document.querySelector('.modal-header .close')
 const alartclose=document.querySelector('.alart-header .close')
 const modal_alart=document.querySelector('.model-alart-section')
@@ -20,6 +21,9 @@ edit.addEventListener('click',function(){
 
 closebutton.addEventListener('click',function(){
     modal_alart.style.display='flex';
+})
+save.addEventListener('click',function(){
+    wrap.classList.remove('active');
 })
 alartclose.addEventListener('click',function(){
     modal_alart.style.display='none';
