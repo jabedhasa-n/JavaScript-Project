@@ -25,6 +25,12 @@ closebutton.addEventListener('click',function(){
 save.addEventListener('click',function(){
     wrap.classList.remove('active');
 })
+wrap.addEventListener('click',function(e){
+
+    if(e.target==this){
+        wrap.classList.remove('active');
+    }
+})
 alartclose.addEventListener('click',function(){
     modal_alart.style.display='none';
 })
