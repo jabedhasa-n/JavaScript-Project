@@ -13,19 +13,18 @@ accordionClick.forEach(data=>{
 
 
     data.addEventListener('click',function(){
+
+        accordionClick.forEach(data=>{
+            if(data!=this){
+                data.classList.remove('active')
+                data.nextElementSibling.classList.remove('active');
+            }
+        })
+
         data.classList.toggle('active')
         data.nextElementSibling.classList.toggle('active');
-        let add =document.querySelectorAll('.accordionBody.active')
-
-        for(let i=0;i<add.length;i++){
-            add[i].classList.remove('active');
-        }
         
     })
-
- 
-
-
 })
 
 
