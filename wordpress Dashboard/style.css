@@ -19,7 +19,12 @@ p{
 .heading{
 	color: red;
 }
-
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
 .tab-item{
 	display: flex;
 }
@@ -94,4 +99,25 @@ p{
 }
 .icon-right p{
 	color: black;
+}
+
+
+
+/* salinet */
+
+.salient_list-item{
+
+}
+.salient_list-item li a.active{
+background-color: blue;
+color: white;
+display: inline-block;
+padding: 5px 10px;
+}
+
+.salient-inner-list{
+	display: none;
+}
+.salient-inner-list.active{
+	display: block;
 }
