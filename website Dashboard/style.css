@@ -3,8 +3,14 @@
 
 
 body {
-	background-color: blue;
+	background-color: rgb(255, 255, 237);
 	font-family: 'Open Sans', sans-serif;
+}
+
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
 }
 
 p{
@@ -14,4 +20,49 @@ p{
 	color: red;
 }
 
+.tab-item{
+	display: flex;
+}
 
+.tab_list{
+	width: 10%;
+	margin: 0 10px 0 0;
+	height: 100vh;
+}
+.tab_list ul{
+	list-style: none;
+	background-color: black;
+	height: 100vh;
+	margin: 0px;
+	padding: 0px;
+}
+
+.tab_list ul li a{
+	text-decoration: none;
+	color: white;
+}
+.tab_list ul li a.active{
+	border: 1px solid #ccc;
+}
+.post-item-body{
+	display: none;
+}
+.post-item-body.active{
+	display: block;
+}
+.name-list-item{
+	display: flex;
+}
+.social-link{
+	display: flex;
+	margin-top: 15px;
+}
+.icon-left{
+	margin-right: 15px;
+}
+.icon-left img{
+	width: 100px;
+}
+.icon-right p{
+	color: black;
+}

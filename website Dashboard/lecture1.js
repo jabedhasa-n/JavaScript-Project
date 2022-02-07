@@ -2,23 +2,24 @@
  * Get Elements
  */
 
-    const text=document.querySelector('.text')
-    const p=document.querySelector('p')
-    const h1=document.createElement('h1')
-    const h2=document.createElement('h2')
-
-    const h2_text=document.createTextNode('Jabed')
+const lists =document.querySelectorAll('.tab_list ul li a')
+const item_body =document.querySelectorAll('.post-item-body')
 
 
-    h1.innerText='Hello Bangladesh';
-    h1.classList.add('heading')
 
+lists.forEach(list=>{
+    list.addEventListener('click',function(e){
+        e.preventDefault();
+        lists.forEach(list_item=>{
+            list_item.classList.remove('active')
+        })
+        list.classList.add('active')
 
-    text.append(h1)
-    h2.appendChild(h2_text)
-    text.append(h2)
-    text.insertBefore(h1,p)
-    text.insertBefore(h2,h1)
-    text.insertBefore(p,h1)
-    console.log(h1)
-console.log('Hellow')
+        const open_body=document.querySelector(list.getAttribute('href'))
+
+        item_body.forEach(body=>{
+            body.classList.remove('active')
+        })
+        open_body.classList.add('active');
+    })
+})
