@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500&display=swap');
+
+
+body {
+	background-color: rgb(255, 255, 237);
+	font-family: 'Open Sans', sans-serif;
+}
+
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+p{
+	color: white;
+}
+.heading{
+	color: red;
+}
+
+.tab-item{
+	display: flex;
+}
+
+.tab_list{
+	width: 12%;
+	margin: 0 10px 0 0;
+	height: 100vh;
+}
+.tab_list ul{
+	list-style: none;
+	background-color: black;
+	height: 100vh;
+	margin: 0px;
+	padding: 0px;
+}
+.tab_list ul li {
+    min-height: 34px;
+    display: block;
+    line-height: 34px;
+}
+.tab_list ul li i{
+	color: #f0f6fc99;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 9px;
+}
+.tab_list ul li a{
+	text-decoration: none;
+	color: white;
+	display: inline-block;
+	width: 100%;
+	position: relative;
+}
+
+.tab_list ul li a.active{
+	background-color: rgb(3, 3, 119);
+	color: white;
+}
+.tab_list ul li a.active::after{
+	right: 0;
+	border: solid 8px transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-right-color: #f0f0f1;
+	top: 50%;
+	margin-top: -8px;
+	display: block;
+}
+
+.post-item-body{
+	display: none;
+}
+.post-item-body.active{
+	display: block;
+}
+.name-list-item{
+	display: flex;
+}
+.social-link{
+	display: flex;
+	margin-top: 15px;
+}
+.icon-left{
+	margin-right: 15px;
+}
+.icon-left img{
+	width: 100px;
+}
+.icon-right p{
+	color: black;
+}
