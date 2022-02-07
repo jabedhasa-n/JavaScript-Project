@@ -25,7 +25,7 @@ p{
 }
 
 .tab_list{
-	width: 10%;
+	width: 12%;
 	margin: 0 10px 0 0;
 	height: 100vh;
 }
@@ -36,14 +36,43 @@ p{
 	margin: 0px;
 	padding: 0px;
 }
-
+.tab_list ul li {
+    min-height: 34px;
+    display: block;
+    line-height: 34px;
+}
+.tab_list ul li i{
+	color: #f0f6fc99;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 9px;
+}
 .tab_list ul li a{
 	text-decoration: none;
 	color: white;
+	display: inline-block;
+	width: 100%;
+	position: relative;
 }
+
 .tab_list ul li a.active{
-	border: 1px solid #ccc;
+	background-color: rgb(3, 3, 119);
+	color: white;
 }
+.tab_list ul li a.active::after{
+	right: 0;
+	border: solid 8px transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-right-color: #f0f0f1;
+	top: 50%;
+	margin-top: -8px;
+	display: block;
+}
+
 .post-item-body{
 	display: none;
 }

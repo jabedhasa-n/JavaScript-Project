@@ -14,7 +14,6 @@ lists.forEach(list=>{
             list_item.classList.remove('active')
         })
         list.classList.add('active')
-
         const open_body=document.querySelector(list.getAttribute('href'))
 
         item_body.forEach(body=>{
