@@ -83,11 +83,16 @@ function allData(){
 
 function studentdel(index_number){
 
+   let con= confirm('are you sure to delete it?')
 
-    
+    if(con){
+        let all_index=dataGet('student_result');
+        all_index.splice(index_number,1);
+        datasend('student_result',all_index);
+        allData();
+    }
+    else{
+        return false;
+    }
 
-    let all_index=dataGet('student_result');
-    all_index.splice(index_number,1);
-    datasend('student_result',all_index);
-    allData();
 }
