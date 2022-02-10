@@ -27,17 +27,17 @@ a{
 }
 .tab-item{
 	display: flex;
+	flex-wrap: wrap;
 }
 
 .tab_list{
-	width: 12%;
+	width: 13%;
 	margin: 0 10px 0 0;
 	height: 100vh;
 }
 .tab_list ul{
 	list-style: none;
 	background-color: black;
-	height: 100vh;
 	margin: 0px;
 	padding: 0px;
 }
@@ -58,6 +58,7 @@ a{
 	display: inline-block;
 	width: 100%;
 	position: relative;
+	font-size: 14px;
 }
 
 .tab_list ul li a.active{
