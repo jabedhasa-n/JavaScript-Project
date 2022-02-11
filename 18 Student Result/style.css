@@ -11,4 +11,10 @@ body{
 	font-weight: 600;
 }
 
+img{
+	width: 300px;
+	display: block;
+	margin: auto;
+	border: 10px solid #fff;
+}
 
