@@ -3,7 +3,7 @@ fetch('https://fakestoreapi.com/products').then (data=>data.json()).then( data =
 let lists;
 data.map(list=>{
     lists+=`
-    <div class="col-md-3 shadow my-3">
+    <div class="col-md-3 my-3">
         <div class="card">
          <a onclick="singleproductid(${list.id})" data-bs-toggle="modal" data-bs-target="#product" href="#"> <img src="${list.image}" alt=""></a>
           <div class="card-body">
