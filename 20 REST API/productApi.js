@@ -8,7 +8,7 @@ const devs_edit_form=document.querySelector('#devs-edit_form');
 //load all skills from api
 
 const skillsload=()=>{
-  axios.get("http://localhost:1010/Skills").then(server=>{
+  axios.get("http://my-json-server.typicode.com/jabed366/devs/Skills").then(server=>{
     let skill_list='';
     server.data.map(skill=>{
       skill_list+=`
@@ -26,7 +26,7 @@ skillsload();
  */
 const getDevelopers=()=>{
   devs_data;
-  axios.get('http://localhost:1010/developers').then(res=>{
+  axios.get('http://my-json-server.typicode.com/jabed366/devs/developers').then(res=>{
     let all_devs_data='';
     res.data.map((dev,index)=>{
     all_devs_data+=`
@@ -62,7 +62,7 @@ devs_form.addEventListener('submit',function(e){
     alert('All Field Required');
   }
   else{
-    axios.post('http://localhost:1010/developers',{
+    axios.post('http://my-json-server.typicode.com/jabed366/devs/developers',{
       id: "",
       name :name.value,
       email :email.value,
@@ -82,7 +82,7 @@ function allDeveloper(id){
   let skill=document.querySelector('#eskill_list');
   let epreview=document.querySelector('#epreview');
   let edit_id=document.querySelector('#edit_id');
-  axios.get(`http://localhost:1010/developers/${id}`).then(res=>{
+  axios.get(`http://my-json-server.typicode.com/jabed366/devs/developers/${id}`).then(res=>{
     name.value=res.data.name;
     email.value=res.data.email;
     photo.value=res.data.photo;
@@ -100,7 +100,7 @@ devs_edit_form.addEventListener('submit',function(e){
   let skill=document.querySelector("#eskill_list");
   let edit_id=document.querySelector("#edit_id");
 
-  axios.patch(`http://localhost:1010/developers/${edit_id.value}`,{
+  axios.patch(`http://my-json-server.typicode.com/jabed366/devs/developers/${edit_id.value}`,{
     id: "",
     name :name.value,
     email :email.value,

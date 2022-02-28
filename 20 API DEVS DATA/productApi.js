@@ -5,7 +5,7 @@ const devs_edit_form=document.querySelector('#devs-edit_form');
 //load all skills from api
 
 const skillsload=()=>{
-  axios.get("http://localhost:1010/Skills").then(server=>{
+  axios.get("https://my-json-server.typicode.com/jabed366/devs_data/Skills").then(server=>{
     let skill_list='';
     server.data.map(skill=>{
       skill_list+=`
@@ -23,7 +23,7 @@ skillsload();
  */
 const getDevelopers=()=>{
   devs_data;
-  axios.get('http://localhost:1010/developers').then(res=>{
+  axios.get('https://my-json-server.typicode.com/jabed366/devs_data/developers').then(res=>{
     let all_devs_data='';
     res.data.map((dev,index)=>{
     all_devs_data+=`
@@ -59,7 +59,7 @@ devs_form.addEventListener('submit',function(e){
     alert('All Field Required');
   }
   else{
-    axios.post('http://localhost:1010/developers',{
+    axios.post('https://my-json-server.typicode.com/jabed366/devs_data/developers',{
       id: "",
       name :name.value,
       email :email.value,
@@ -71,6 +71,7 @@ devs_form.addEventListener('submit',function(e){
   }
 })
 
+
 function allDeveloper(id){
   let name=document.querySelector('#ename')
   let email=document.querySelector('#eemail')
@@ -78,7 +79,7 @@ function allDeveloper(id){
   let skill=document.querySelector('#eskill_list');
   let epreview=document.querySelector('#epreview');
   let edit_id=document.querySelector('#edit_id');
-  axios.get(`http://localhost:1010/developers/${id}`).then(res=>{
+  axios.get(`https://my-json-server.typicode.com/jabed366/devs_data/developers/${id}`).then(res=>{
     name.value=res.data.name;
     email.value=res.data.email;
     photo.value=res.data.photo;
@@ -96,7 +97,7 @@ devs_edit_form.addEventListener('submit',function(e){
   let skill=document.querySelector("#eskill_list");
   let edit_id=document.querySelector("#edit_id");
 
-  axios.patch(`http://localhost:1010/developers/${edit_id.value}`,{
+  axios.patch(`https://my-json-server.typicode.com/jabed366/devs_data/developers/${edit_id.value}`,{
     id: "",
     name :name.value,
     email :email.value,
@@ -115,10 +116,12 @@ function data_delete(id){
 
 delete_data.addEventListener('click',function(){
   let get_data=this.getAttribute('deleId')
-  axios.delete(`http://localhost:1010/developers/${get_data}`).then(res=>{
+  axios.delete(`https://my-json-server.typicode.com/jabed366/devs_data/developers/${get_data}`).then(res=>{
     getDevelopers();
   })
 })
+
+
 /**
  * quick view function
  * @param {*} id 
@@ -126,14 +129,16 @@ delete_data.addEventListener('click',function(){
 function quickView(id){
   let view_data=document.querySelector("#data_view");
   let quick_views=view_data.querySelector(".modal-body");
-  axios.get(`http://localhost:1010/developers/${id}`).then(dev=>{
+  axios.get(`https://my-json-server.typicode.com/jabed366/devs_data/developers/${id}`).then(dev=>{
 
-  axios.get(`http://localhost:1010/Skills/${id}`).then(res=>{
+  axios.get(`https://my-json-server.typicode.com/jabed366/devs_data/Skills/${id}`).then(res=>{
     quick_views.innerHTML=`
     <img src="${dev.data.photo}" alt="">
     <h2>${dev.data.name}</h2>
     <h2>${res.data.name}</h2>
     `
     })
+
   })
+
 }

@@ -1,5 +1,5 @@
-console.log("Hellow World");
-console.log("This is my JavaScipt Project");
+// console.log("Hellow World");
+// console.log("This is my JavaScipt Project");
 
 
 // var a,b,c;
@@ -7,9 +7,6 @@ console.log("This is my JavaScipt Project");
 // console.log(a,b,c)
 // b=a++;
 // console.log(a,b,c)
-
-
-
     var a, b;
     b = 10;
     a =++b + ++b;
