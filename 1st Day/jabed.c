@@ -2,14 +2,13 @@
 int main() 
 {
     int number;
+    int sum=0;
     printf("Please Type Your Number: ");
     scanf("%d",&number);
     for(int i=1;i<=number;i++){
-        for(int j=1;j<=i;j++){
-        printf("%2d",j);
-        }
-        printf("\n");
+        sum=sum*10+i;
     }
+    printf("%d",sum);
     return 0;
 }
 
