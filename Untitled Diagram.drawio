@@ -44,7 +44,7 @@
           <mxGeometry x="-202" y="-137" width="100" height="641" as="geometry" />
         </mxCell>
         <mxCell id="KwT5RkakPbR6_VRtJiSc-29" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="KwT5RkakPbR6_VRtJiSc-28" vertex="1">
-          <mxGeometry x="45" y="80" width="10" height="121" as="geometry" />
+          <mxGeometry x="45" y="80" width="10" height="181" as="geometry" />
         </mxCell>
         <mxCell id="KwT5RkakPbR6_VRtJiSc-30" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="KwT5RkakPbR6_VRtJiSc-1" target="KwT5RkakPbR6_VRtJiSc-28" edge="1">
           <mxGeometry relative="1" as="geometry">
